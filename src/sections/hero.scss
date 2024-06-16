@@ -1,0 +1,31 @@
+@use "../base/variables.scss" as *;
+.hero {
+    padding-top: 9rem;
+
+    .hero-desc{
+       
+    }
+
+    .hero-title {
+        font-size: 7rem;
+        color: $clr-primary;
+    }
+
+    .hero-sub{
+
+    }
+
+    .hero-detail{
+
+    }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > * {
+        flex: 1;
+    }
+}

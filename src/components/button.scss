@@ -1,0 +1,30 @@
+@use "../base/variables.scss" as *;
+
+.btn {
+  padding: 1.4rem 4.4rem;
+  border-radius: 0.8rem;
+  letter-spacing: 0.03rem;
+  transition: 0.5s;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+// placeholder
+%cursor {
+  cursor: pointer;
+}
+
+.btn-info {
+  @extend .btn;
+  @extend %cursor;
+
+  color: $clr-primary;
+}
+
+.btn-shop {
+  @extend .btn;
+  @extend %cursor;
+
+  color: $clr-white;
+  background: linear-gradient(120deg, #60a4f4, #2a73dd);
+}

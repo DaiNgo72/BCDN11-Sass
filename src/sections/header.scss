@@ -1,0 +1,42 @@
+@use "../base/variables.scss";
+@use "../base/variables_2.scss" as *;
+
+.header {
+  position: fixed;
+  z-index: 10;
+
+  width: 100%;
+
+  background-color: #f5f9fe;
+
+  box-shadow: 0 2px 4px #e2ebfc;
+
+  .header-logo {
+    font-size: 3.2rem; // 18px;
+    font-weight: 700;
+    color: variables.$clr-primary;
+  }
+
+  .header-nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-item {
+      a {
+        color: variables.$clr-primary;
+        font-size: 2.6rem;
+      }
+    }
+  }
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+}
